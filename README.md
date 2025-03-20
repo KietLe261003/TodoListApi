@@ -11,7 +11,7 @@ A backend API for a to-do list application built with Spring Boot. This project 
 - Dockerized deployment with MongoDB integration
 
 ## Setup
-1. Clone the repository: `git clone https://github.com/[your-username]/TodoListApi.git`
+1. Clone the repository: `git clone https://github.com/KietLe261003/TodoListApi.git`
 2. Install dependencies: `mvn install`
 3. Run Docker: `docker-compose up -d`
 
