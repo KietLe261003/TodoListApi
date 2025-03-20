@@ -1,0 +1,31 @@
+version: '3'
+services:
+  ## Mongo Docker Compose Config
+  mongo:
+    container_name: mongo
+    image: mongo:4.4.14-rc0-focal
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    expose:
+      - "27017"
+    volumes:
+      - ./mongo-data:/data/db
+
+  ## Task-Service Docker Compose Config
+  taskservice:
+    container_name: taskservice
+    image: kietle26102003/taskservice:latest
+    pull_policy: always
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=docker
+    depends_on:
+      mongo:
+        condition: service_started
+
+
+
+
+
