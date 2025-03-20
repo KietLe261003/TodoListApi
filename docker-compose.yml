@@ -24,8 +24,3 @@ services:
     depends_on:
       mongo:
         condition: service_started
-
-
-
-
-
