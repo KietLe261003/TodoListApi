@@ -14,6 +14,7 @@ A backend API for a to-do list application built with Spring Boot. This project 
 1. Clone the repository: `git clone https://github.com/KietLe261003/TodoListApi.git`
 2. Install dependencies: `mvn install`
 3. Run Docker: `docker-compose up -d`
+4. Access http://localhost:8080/swagger-ui/index.html for testing
 
 ## Endpoints
 - `GET /tasks`: Retrieve all tasks
